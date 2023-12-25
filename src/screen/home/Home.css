@@ -1,19 +1,43 @@
 .home-container{
-
-/* margin-top: 100px; */
 background-color: rgb(0, 93, 0);
 overflow: hidden;
 
 display: flex;
 align-items: center;
 justify-content: center;
-height: 60vh;
+/* height: 60vh; */
+height: 75vh;
+/* height: 100vh; */
 
 
-/* border-radius: 25% 25% 100% 0% / 0% 0% 24% 55%; */
 border-radius: 0px 0px 160px 10px;
 margin-top: 100px;
+overflow: hidden;
 }
+
+
+.home-text-section{
+  
+   background-color:black;
+   padding: 20px;
+   box-shadow: rgb(76, 76, 76) 3px 3px 6px 0px inset, rgbrgba(45, 41, 41, 0.5)px -3px 6px 1px inset;
+}
+.home-heading-title{
+   color: green;
+   text-align: left;
+   font-size: 45px;
+ }
+ .home-heading-mtitle{
+   color: white;
+   text-align: left;
+   font-size: 25;
+ }
+ .home-heading-ctitle{
+   color: white;
+   text-align: left;
+ }
+  
+  
 
 .home-banner-container{
 
@@ -21,7 +45,7 @@ margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 25px 0px 25px 55px;
+    padding: 25px 0px 25px 25px;
     gap:35px;
 }
 
@@ -54,10 +78,11 @@ overflow: hidden;
       margin-top: 100px;
       background-color: green;
       /* overflow: scroll; */
-      display: block;
+      /* display: block; */
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      height: 80vh;
+
       }
 
    .home-banner-container{
@@ -70,10 +95,12 @@ overflow: hidden;
       padding: 0px 20px;
   }
 .home-text-section{
-   background-color: #3e834747;
+  
+   background-color: #1e1e1ec2;
    position: absolute;
-   bottom: 20%;
+   bottom: 30%;
    padding: 10px;
+   /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
 }
   
   
@@ -99,6 +126,11 @@ overflow: hidden;
      height:auto;
    
   }
+  .home-heading-title{
+   color: green;
+   text-align: left;
+   font-size: 35px;
+ }
   
 }
 

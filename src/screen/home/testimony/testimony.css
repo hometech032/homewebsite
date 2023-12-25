@@ -1,0 +1,30 @@
+.testimony-container{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 105px 35px;
+    gap: 75px;
+    overflow: hidden;
+}
+.testimony-container-client-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-con{
+   
+
+    width: 3000px;
+}
+@media screen and (max-width: 900px) {
+
+    .slider-con{
+   
+
+        width: 300px;
+    }
+
+}

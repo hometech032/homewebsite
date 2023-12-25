@@ -11,6 +11,9 @@ import Header from "../header/Header";
 import Services from "../services/Services";
 import Footer from "../../component/footer/Footer";
 import { handlepost } from "../../component/services/Api";
+import AboutUs from "./aboutus/Aboutus";
+import Whyus from "./whyus/index";
+import Testimony from "./testimony";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -149,14 +152,16 @@ const Home = () => {
 <>
 
 <Header/>
+<div >
+
     <div className="home-container" ref={Homesection}>
       <div className="home-banner-container" >
         <div className="home-text-section frontground" data-aos="slide-right">
-          <h4 className="primary-heading-white">Home Tech Services Pvt Ltd</h4>
-          <h6 className="primary-heading-white">
+          <h4 className="home-heading-title">Home Tech Services Pvt Ltd</h4>
+          <h6 className="home-heading-mtitle">
             All Your Facility Requirement Under One Roof
           </h6>
-          <p className="primary-text-white-h">
+          <p className="home-heading-ctitle">
             We help our clients with their manpower intensive needs especially
             through fulfilling their blue collar staff vacancies Home Tech
             Services Pvt Ltd aspires to be the premier service provider in
@@ -183,12 +188,18 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> 
+
+    <AboutUs/>
     <Services/>
+    <Whyus/>
 
 <Client/>
+<Testimony/>
 {/* <button onClick={()=>handlepost('home',newData)}>stop</button> */}
 <Footer/>
+
+</div>
 </>
   );
 };

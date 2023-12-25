@@ -78,10 +78,10 @@ const Client = () => {
           <h1 className="primary-heading ">
             Client
           </h1>
-          <h2 className="primary-heading-white ">
+          <h2 className="text-black">
           Trusted By 100 + satisfied clients
           </h2>
-          <p className="primary-text-white">
+          <p className="text-black">
             Help our clients with their manpower intensive needs especially
             through fulfilling their blue collar staff vacancies
           </p>

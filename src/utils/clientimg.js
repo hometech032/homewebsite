@@ -97,6 +97,11 @@ export const background=()=>[
   `${require('../assets/background/20.jpeg')}`,
   `${require('../assets/background/21.jpeg')}`,
   `${require('../assets/background/13.jpeg')}`,
+
+  //27
+  `${require('../assets/background/about.png')}`,
+
+
  
     
 ]

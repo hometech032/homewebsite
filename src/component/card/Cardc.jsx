@@ -52,7 +52,7 @@ const Cardc =({servicename,content,img})=>{
     return (
         <>
          
-                    <div style={{width:"250px"}} data-aos="zoom-out"  className="col-lg-3 col-md-6 col-sm-12 ">
+                    <div style={{width:"250px"}} data-aos="fade-up"  className="col-lg-3 col-md-6 col-sm-12 ">
                         <div  className="bg-light rounded service-item card-shodow">
                             <div  className=" service-content d-flex align-items-center justify-content-center p-4">
                                 <div className="service-content-icon text-center">
@@ -80,3 +80,26 @@ const Cardc =({servicename,content,img})=>{
       );
 }
 export default Cardc;
+
+
+export const TestimonyCard=({content,img})=>{
+
+
+    return(
+        <>
+        <div className='testimon-card-container testimony-card-shadow'>
+  
+          <img className='testimony-logo' src={img} alt="" />
+
+          <div className='testimony-card-text'>
+            <p className="mb-4">
+              {content}
+            </p>
+          </div>
+            
+          
+        </div>
+        
+        </>
+    )
+}
