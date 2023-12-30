@@ -1,50 +1,106 @@
-.footer{
+.footer-container {
+
+    display: flex;
+    flex-direction: column;
     background-color: black;
+    padding: 55px 55px 0px 55px;
+    gap: 55px;
+}
+
+.footer-text-l {
+    text-align: left;
+}
+
+.footer-top {
+
     display: flex;
     color: white;
-    
+    align-items: flex-start;
+    justify-content: space-evenly;
     gap: 105px;
-    padding:  40px;
-   
+
+}
 
 
-    }
+.footer-about {
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* gap:1px; */
+}
+
+.footer-services {
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-gettouch {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* footer icon text */
+
+.footer-bottom {
+    padding: 55px 0px 0px 0px;
+    border-top: 1px solid rgba(211, 211, 211, 0.432);
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+.footer-icon img {
+    width: 260px;
+}
 
 
-    .footer-about{
+.footer-icon-h {
+
+    text-align: left;
+    color: white;
+}
+
+.footer-icon-c {
+    text-align: left;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    gap: 25px;
+}
+
+/*  */
+
+
+@media screen and (max-width: 900px) {
+
+    .footer-top{
 
         display: flex;
-         align-items: flex-start;
         flex-direction: column;
-        /* gap:1px; */
-    }
-
-    .footer-services{
-        
-        display: flex;
+        color: white;
         align-items: flex-start;
-       flex-direction: column;
+        justify-content: space-evenly;
+        gap: 105px;
+    
     }
-    .footer-contactus
-    { 
+    .footer-icon {
         display: flex;
-         align-items: flex-start;
         flex-direction: column;
-        
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 0px 0px 25px 0px;
     }
 
-    @media screen and (max-width: 900px) {
-        .footer{
-            background-color: black;
-            display: flex;
-            color: white;
-            
-            gap: 18px;
-            padding: 13px;
-        
-        
-        
-            }    
-
- }
- 
+}

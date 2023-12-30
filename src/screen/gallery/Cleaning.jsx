@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { background ,cleaning, food } from "../../utils/clientimg";
 import Slider from "react-slick";
-
 const Cleaning = () => {
   const backgroundimg = background();
   const cleaningimg = cleaning();
@@ -164,6 +163,8 @@ const Cleaning = () => {
           </div>
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 };

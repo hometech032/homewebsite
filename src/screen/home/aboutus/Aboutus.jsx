@@ -19,7 +19,7 @@ const AboutUs = () => {
     <>
       <div className="about-us-container">
         <div className="about-us-content-container">
-          <h1 className="primary-heading ">About Us</h1>
+          <h4 className="primary-heading ">About Us</h4>
           <p className="primary-text-white">
             HOME Tech SERVICES PVT LTD help our clients with their manpower
             intensive needs especially through fulfilling their blue collar

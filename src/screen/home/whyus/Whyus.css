@@ -1,5 +1,74 @@
 
+
 .whyus-container{
 
-    padding:100px 55px;
+    padding:55px 55px;
+    /* background-color: black; */
+    /* background: 
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323; */
+
+
+    
+background: #47ff8b;
+background: -webkit-linear-gradient(190deg, #47ff8b 0%, #004bf8 100%);
+background: linear-gradient(190deg, #47ff8b 0%, #004bf8 100%);
+
+    
+
+}
+
+.whyus-headinftext-w{
+    color: white;
+    text-align: center;
+}
+.whyus-headinftext-b{
+    color: black;
+    text-align: center;
+}
+
+
+
+
+.why-content-conatiner{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.textAlingLeft{
+    text-align: left;
+}
+
+.whyus-card{
+width: 270px;
+background-color: rgba(255, 255, 255, 0.129);
+}
+
+
+.whyus-text-white{
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 900px) {
+
+    .whyus-container{
+
+        padding:20px 20px;
+    }
+
+ 
+    .whyus-card{
+        width: 310px;
+background-color: rgba(249, 246, 246, 0.571);
+
+        }
+
 }

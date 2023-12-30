@@ -163,6 +163,8 @@ const HvacGallery = () => {
           </div>
         </div>
       </div>
+      <Footer/>
+
     </>
   );
 };

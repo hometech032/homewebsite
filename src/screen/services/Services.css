@@ -17,7 +17,7 @@
       flex-direction: column;
         align-items: center;
         justify-content: center; 
-        padding: 75px 55px 75px 55px;
+        padding:55px;
 
     }
     
@@ -104,6 +104,17 @@
 
 
 
+    .services-container{
+
+   
+ 
+        background-color: white;
+        overflow: hidden;
+        /* padding: 10px  0px; */
+        padding:   0px;
+        
+        
+        }
  
         .services-banner-container{
         
@@ -150,10 +161,7 @@
        .service-card-container{
     
         display: flex;
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* justify-content: space-evenly; */
-        /* gap: 25px; */
+     
 
         width: 100%;
         overflow: hidden;

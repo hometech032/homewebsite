@@ -163,6 +163,8 @@ const ElectricGallery = () => {
           </div>
         </div>
       </div>
+      <Footer/>
+
     </>
   );
 };

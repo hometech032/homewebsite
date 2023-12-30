@@ -179,6 +179,8 @@ const Firegallery = () => {
           </div>
         </div>
       </div>
+      <Footer/>
+
     </>
   );
 };

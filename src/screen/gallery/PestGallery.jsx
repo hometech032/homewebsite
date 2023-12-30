@@ -163,6 +163,8 @@ const PestGallery = () => {
           </div>
         </div>
       </div>
+      <Footer/>
+
     </>
   );
 };

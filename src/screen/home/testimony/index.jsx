@@ -75,7 +75,7 @@ const Testimony = () => {
   return (
     <>
       <div className="testimony-container">
-        <h1 className="primary-heading ">What Our Client Says</h1>
+        <h4 className="primary-heading ">What Our Client Says</h4>
         <div className="testimony-container-client-card">
           <div className=" slider-con">
             <Slider {...settings}>

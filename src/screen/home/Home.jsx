@@ -162,10 +162,10 @@ const Home = () => {
             All Your Facility Requirement Under One Roof
           </h6>
           <p className="home-heading-ctitle">
-            We help our clients with their manpower intensive needs especially
+            {/* We help our clients with their manpower intensive needs especially
             through fulfilling their blue collar staff vacancies Home Tech
             Services Pvt Ltd aspires to be the premier service provider in
-            India's dynamically evolving facility management sector.
+            India's dynamically evolving facility management sector. */}
           </p>
           {/* <button className="secondary-button">
            Order Now
@@ -175,7 +175,7 @@ const Home = () => {
 
           className="home-image-section foreground-img "
         >
-          <div style={{ width: "930px" }}>
+          <div className="home-banner-img" >
             <Slider {...settings}>
               <img src={cleaningimg[2]} alt="" />
               <img src={housekeepingimg[14]} alt="" />

@@ -75,12 +75,12 @@ const Client = () => {
         </div>
 
         <div className="client-text-section frontground">
-          <h1 className="primary-heading ">
+          <h4 className="primary-heading ">
             Client
-          </h1>
-          <h2 className="text-black">
+          </h4>
+          <h5 className="text-black">
           Trusted By 100 + satisfied clients
-          </h2>
+          </h5>
           <p className="text-black">
             Help our clients with their manpower intensive needs especially
             through fulfilling their blue collar staff vacancies
@@ -101,7 +101,7 @@ const Client = () => {
         </div>
 
         <div data-aos="slide-right"   className="client-image-section foreground-img">
-          <img src={backgroundimg[16]} alt="" />
+          {/* <img src={backgroundimg[27]} alt="" /> */}
         </div>
       </div>
     </div>

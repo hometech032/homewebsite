@@ -167,6 +167,8 @@ Security guards adhere to industry regulations, ensuring that the facility remai
             </div>
           </div>
         </div>
+      <Footer/>
+
       </>
     )
 }

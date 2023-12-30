@@ -182,6 +182,8 @@ const Housecleaning = () => {
           </div>
         </div>
       </div>
+      <Footer/>
+
     </>
   );
 };
