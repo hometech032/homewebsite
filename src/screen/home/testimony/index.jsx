@@ -2,7 +2,7 @@ import { TestimonyCard } from "../../../component/card/Cardc";
 import "../testimony/testimony.css";
 import { clientimg } from "../../../utils/clientimg";
 import Slider from "react-slick";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 const Testimony = () => {
   const clientImages = clientimg();
 
@@ -37,12 +37,11 @@ const Testimony = () => {
       if (window.innerWidth <= 900) {
         setslideview(1);
         setslidecount(1);
-        setFade(true)
+        setFade(true);
       } else {
         setslideview(3);
         setslidecount(3);
-        setFade(false)
-
+        setFade(false);
       }
     };
 
@@ -59,17 +58,21 @@ const Testimony = () => {
   }, []);
 
   const settings = {
-     dots: true,
+    dots: true,
     infinite: true,
-     fade:fade,
-    slidesToShow:slideview,
+    fade: fade,
+    slidesToShow: slideview,
+    slidesToScroll: 1,
+
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
 
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 6000,
-    cssEase: "linear"
+    speed: 4000,
+    autoplaySpeed:2000,
+    cssEase: "linear",
+   
+    
   };
 
   return (
@@ -79,36 +82,38 @@ const Testimony = () => {
         <div className="testimony-container-client-card">
           <div className=" slider-con">
             <Slider {...settings}>
-           
               <TestimonyCard
-                  img={clientImages[15].log}
-                  content={
-                    "We help our clients with their manpower intensive needs especially through fulfilling their blue collar staff vacancies Home Tech Services Pvt Ltd aspires to be the premier service provider in India's dynamically evolving facility management sector."
-                  }
-                />
+                img={clientImages[7].log}
+                content={
+                  "We needed a facilities management team. HomeTech's security and cleaning services are the backbone of Marina Mall,They exceeded our expectations. Their proactive approach prevents problems before they arise, saving us time and money. We're thrilled!"
+                }
+              />
 
-                <TestimonyCard
-                  img={clientImages[18].log}
-                  content={
-                    "We help our clients with their manpower intensive needs especially through fulfilling their blue collar staff vacancies Home Tech Services Pvt Ltd aspires to be the premier service provider in India's dynamically evolving facility management sector."
-                  }
-                />
-                     <TestimonyCard
-                  img={clientImages[17].log}
-                  content={
-                    "We help our clients with their manpower intensive needs especially through fulfilling their blue collar staff vacancies Home Tech Services Pvt Ltd aspires to be the premier service provider in India's dynamically evolving facility management sector."
-                  }
-                />
+              <TestimonyCard
+                img={clientImages[37].log}
+                content={
+                  "We needed a facilities management team. HomeTech's security and cleaning services are the backbone of Marina Mall,They exceeded our expectations. Their proactive approach prevents problems before they arise, saving us time and money. We're thrilled!."
+                }
+              />
+              <TestimonyCard
+                img={clientImages[14].log}
+                content={
+                  "HomeTech has transformed Crescent Colleges' campus. Their pest control, waste management, and grounds maintenance are top-notch, creating a healthy and vibrant learning environment for our students and staff. We can focus on education, knowing our facilities are in good hands"
+                }
+              />
 
-             <TestimonyCard
-                  img={clientImages[16].log}
-                  content={
-                    "We help our clients with their manpower intensive needs especially through fulfilling their blue collar staff vacancies Home Tech Services Pvt Ltd aspires to be the premier service provider in India's dynamically evolving facility management sector."
-                  }
-                />
-
-
-
+              <TestimonyCard
+                img={clientImages[18].log}
+                content={
+                  "Our showroom needs to be immaculate to showcase our premium vehicles. HomeTech understands that. Their attention to detail is breathtaking, and their maintenance ensures our showroom always shines We've seen a direct correlation with increased sales since HomeTech came onboard. They're worth their weight in gold."
+                }
+              />
+               <TestimonyCard
+                img={clientImages[0].log}
+                content={
+                  "HomeTech isn't just a facility management company; They're our partners in peace of mind. They keep our offices secure, our systems running smoothly, and our employees happy. Knowing everything's in their capable hands frees us to focus on growing the business. We wouldn't trust anyone else with our building."
+                }
+              />
             </Slider>
           </div>
         </div>

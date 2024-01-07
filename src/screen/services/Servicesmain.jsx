@@ -6,9 +6,11 @@ import { Parallax } from "react-parallax";
 import { background, food,electric,cleaning,fire,havc,pest,housekeeping,security,threeD } from "../../utils/clientimg";
 import React, { Component, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-
+import Footer from "../../component/footer/Footer";
+import Header from "../header/Header";
+import Whyus from "../home/whyus";
 import { useNavigate } from "react-router-dom";
-const Services = () => {
+const ServicesMain = () => {
   const backgroundimg = background();
   const foodimg = food();
   const housekeepingimg = housekeeping();
@@ -74,6 +76,12 @@ const Services = () => {
 
  
   return (
+
+    <>
+    <Header/>
+    
+    <div style={{marginTop:"100px"}}>
+
     <div className="services-container" ref={Servicessection}>
       <div className="services-banner-container">
      
@@ -115,6 +123,12 @@ const Services = () => {
       
       </div>
     </div>
+
+    <Whyus/>
+    <Footer/>
+
+    </div>
+    </>
   );
 };
 
@@ -142,6 +156,6 @@ function SamplePrevArrow(props) {
     />
   );
 }
-export default Services;
+export default ServicesMain;
 
 

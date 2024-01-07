@@ -19,7 +19,7 @@ import { useNavRef } from "../../context/navigation/navContext";
 
 import { useNavigate } from "react-router-dom";
 
-const pages = ['Home', 'About', 'Services','Profile','Team','Contact'];
+const pages = ['Home', 'About', 'Services','Profile','Careers','Blogs'];
 
 
 const Header=()=>{
@@ -160,9 +160,10 @@ const scrollDown = (ref) => {
                        if(page==="Services"){
                          // scrollToTop()
                          
-                         navigate("/")
+                         navigate("/hometech/services")
 
-                         scrollDown(Servicessection) 
+
+                        //  scrollDown(Servicessection) 
   
                        }
   
@@ -170,24 +171,25 @@ const scrollDown = (ref) => {
                         // scrollDown(Profilesection) 
                       scrollToTop()
 
-                        navigate("/")
+                      navigate("/profile")
   
                        }
-                       if(page==="Team"){
+                       if(page==="Careers"){
                          // scrollToTop()
                          
-                         navigate("/hometech/aboutus")
+                         navigate("/hometech/careers")
                          scrollDown(Teamsection) 
                         
                        }
-                       if(page==="Contact"){
+                       if(page==="Blogs"){
                          // scrollToTop()
                          
-                         navigate("/hometech/aboutus")
+                         navigate("/hometech/blogs")
                          scrollDown(Contactsection) 
 
   
                        }
+                    
   
                   }}>
                     <Typography textAlign="center">{page}</Typography>
@@ -240,32 +242,38 @@ const scrollDown = (ref) => {
                      }
                      if(page==="Services"){
                       //  scrollToTop()
-                       navigate("/")
-                       scrollDown(Servicessection) 
+                       navigate("/hometech/services")
+                      //  scrollDown(Servicessection) 
 
                      }
 
                      if(page==="Profile"){
                       //  scrollToTop()
-                       navigate("/")
+                      
+                      navigate("/profile")
                        scrollDown(Profilesection) 
 
                      }
-                     if(page==="Team"){
-                      //  scrollToTop()
-                      navigate("/hometech/aboutus")
+
+                     if(page==="Careers"){
+                      // scrollToTop()
+                      
+                      navigate("/hometech/careers")
                       scrollDown(Teamsection) 
-
-
-                     }
-                     if(page==="Contact"){
-                      //  scrollToTop()
-                      navigate("/hometech/aboutus")
+                     
+                    }
+                    if(page==="Blogs"){
+                      // scrollToTop()
+                      
+                      navigate("/hometech/blogs")
                       scrollDown(Contactsection) 
 
-                      // window.scrollTo({ top: 0, behavior: 'smooth' });
-                     }
 
+                    }
+
+
+                   
+                   
                       
                   }}
                   sx={{ my: 2, color: 'white', display: 'block' }}

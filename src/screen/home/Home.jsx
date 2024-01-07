@@ -1,7 +1,7 @@
 import "./Home.css";
 import { useNavRef } from "../../context/navigation/navContext";
 import Client from "../client/Client";
-import {  cleaning,electric,fire,havc,housekeeping,pest} from "../../utils/clientimg";
+import {  cleaning,electric,fire,havc,housekeeping,pest,security} from "../../utils/clientimg";
 
 import Slider from "react-slick";
 
@@ -51,6 +51,7 @@ const Home = () => {
 
 
   const cleaningimg = cleaning();
+  const securityimg = security();
   const electricimg = electric();
   const fireimg = fire();
   const havcimg = havc();
@@ -137,8 +138,8 @@ const Home = () => {
     slidesToScroll: 1,
     fade: true,
     autoplay:true,
-    speed:2000,
-    autoplaySpeed: 2000,
+    speed:5000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     arrows:true,
     nextArrow: <SampleNextArrow />,
@@ -156,8 +157,8 @@ const Home = () => {
 
     <div className="home-container" ref={Homesection}>
       <div className="home-banner-container" >
-        <div className="home-text-section frontground" data-aos="slide-right">
-          <h4 className="home-heading-title">Home Tech Services Pvt Ltd</h4>
+        <div className="home-text-section frontground" data-aos="fade-in">
+          <h4 className="home-heading-title ">Home Tech Services Pvt Ltd</h4>
           <h6 className="home-heading-mtitle">
             All Your Facility Requirement Under One Roof
           </h6>
@@ -177,13 +178,13 @@ const Home = () => {
         >
           <div className="home-banner-img" >
             <Slider {...settings}>
-              <img src={cleaningimg[2]} alt="" />
-              <img src={housekeepingimg[14]} alt="" />
-              <img src={fireimg[4]} alt="" />
-              <img src={havcimg[2]} alt="" />
-              <img src={electricimg[8]} alt="" />
-              <img src={fireimg[5]} alt="" />
-              <img src={pestimg[5]} alt="" />
+              <img src={securityimg[5]} alt="" />
+              <img src={housekeepingimg[15]} alt="" />
+              <img src={havcimg[0]} alt="" />
+              <img src={electricimg[4]} alt="" />
+              <img src={fireimg[12]} alt="" />
+              <img src={pestimg[3]} alt="" />
+              {/* <img src={cleaningimg[1]} alt="" /> */}
             </Slider>
           </div>
         </div>

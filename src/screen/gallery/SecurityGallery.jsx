@@ -6,6 +6,29 @@ import React from "react";
 import { background ,security, food } from "../../utils/clientimg";
 import Slider from "react-slick";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+
+      onClick={onClick}
+    />
+  );
+}
+
 const SecurityGallery=()=>{
 
     const backgroundimg = background();
@@ -13,41 +36,47 @@ const SecurityGallery=()=>{
   
     const [slideview, setslideview] = useState(5);
     const [slidecount, setslidecount] = useState(5);
-    useEffect(() => {
-      // Function to update slideview and slidecount based on window.innerWidth
-      const updateSlideValues = () => {
-        if (window.innerWidth <= 900) {
-          setslideview(1);
-          setslidecount(1);
-        } else {
-          setslideview(3);
-          setslidecount(3);
-        }
-      };
-  
-      // Initial update
-      updateSlideValues();
-  
-      // Event listener for window resize
-      window.addEventListener("resize", updateSlideValues);
-  
-      // Clean up the event listener on component unmount
-      return () => {
-        window.removeEventListener("resize", updateSlideValues);
-      };
-    }, []);
-  
-  
-  
-  
-    const settings = {
-      dots: true,
-      infinite: true,
-  
-      slidesToShow: slideview,
-      slidesToScroll: slidecount,
-      centerMode:true,
+    const [center, setCenter] = useState(false);
+
+  useEffect(() => {
+    // Function to update slideview and slidecount based on window.innerWidth
+    const updateSlideValues = () => {
+      if (window.innerWidth <= 900) {
+        setslideview(1);
+        setslidecount(1);
+        setCenter(true)
+      } else {
+        setslideview(3);
+        setslidecount(3);
+        setCenter(false)
+      }
     };
+
+    // Initial update
+    updateSlideValues();
+
+    // Event listener for window resize
+    window.addEventListener("resize", updateSlideValues);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", updateSlideValues);
+    };
+  }, []);
+
+
+
+  const settings = {
+    dots: true,
+    infinite: true,
+
+    slidesToShow: slideview,
+    slidesToScroll: slidecount,
+    centerMode:center,
+
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
+  };
     
   
   
@@ -72,7 +101,7 @@ const SecurityGallery=()=>{
         >
         <h4 className="primary-heading">Gallery</h4>
   
-          <div style={{ width: "95%" }}>
+          <div  className="gallaery-img">
             <div>
               <Slider {...settings}>
                 
@@ -80,7 +109,7 @@ const SecurityGallery=()=>{
                 <div>
                   <img
                     style={{ width: "95%", objectFit: "cover" }}
-                    src={securityimg[6]}
+                    src={securityimg[9]}
                   />
                 </div>
                 <div>
@@ -129,29 +158,29 @@ const SecurityGallery=()=>{
               Security guard services play a crucial role in facility management, ensuring the safety of occupants, assets, and information. Comprehensive security services for a secure business environment. Trained professionals ensuring peace of mind.
               </p>
   
-              <h2 className="primary-heading-white">Prevention and Deterrence:  </h2>
+              <h5 className="primary-heading-white">Prevention and Deterrence:  </h5>
               <p className="primary-heading-white">
               Guards serve as a deterrent to potential threats, preventing unauthorized access, theft, vandalism, and other security breaches.
               </p>
   
-              <h2 className="primary-heading-white">Emergency Response:  </h2>
+              <h5 className="primary-heading-white">Emergency Response:  </h5>
               <p className="primary-heading-white">
               Trained security personnel are equipped to handle emergencies, providing immediate response and assistance in critical situations.
               </p>
   
-              <h2 className="primary-heading-white">Surveillance and Monitoring: </h2>
+              <h5 className="primary-heading-white">Surveillance and Monitoring: </h5>
               <p className="primary-heading-white">
               Security guards utilize surveillance systems to monitor and analyze activities, maintaining a vigilant presence to identify and address potential risks.
               </p>
   
-              <h2 className="primary-heading-white">
+              <h5 className="primary-heading-white">
               	Access Control: 
-              </h2>
+              </h5>
               <p className="primary-heading-white">
               Implementing access control measures, guards regulate entry points, verifying credentials, and ensuring only authorized individuals gain access to the facility.
               </p>
   
-              <h2 className="primary-heading-white">Risk Assessment:  </h2>
+              <h5 className="primary-heading-white">Risk Assessment:  </h5>
               <p className="primary-heading-white">
               Security professionals conduct regular risk assessments, identifying vulnerabilities and implementing measures to mitigate potential security threats.
 
@@ -163,7 +192,7 @@ Security guards adhere to industry regulations, ensuring that the facility remai
               data-aos="zoom-in"
               className="about-image-section foreground-img"
             >
-              <img src={backgroundimg[5]} alt="" />
+              <img src={backgroundimg[13]} alt="" />
             </div>
           </div>
         </div>

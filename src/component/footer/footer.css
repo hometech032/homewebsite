@@ -6,9 +6,21 @@
     padding: 55px 55px 0px 55px;
     gap: 55px;
 }
+.footer-text-h-l {
+    text-align: left;
+    cursor: default;
 
+}
 .footer-text-l {
     text-align: left;
+    cursor: pointer;
+    color:  grey;
+    font-weight: 500;
+}
+.footer-text-l:hover{
+
+    color:  white;
+  
 }
 
 .footer-top {

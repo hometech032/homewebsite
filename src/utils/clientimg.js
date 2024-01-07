@@ -100,6 +100,10 @@ export const background=()=>[
 
   //27
   `${require('../assets/background/about.png')}`,
+  `${require('../assets/background/pest.png')}`,
+  `${require('../assets/background/fire.jpg')}`,
+  `${require('../assets/background/about1.png')}`,
+  `${require('../assets/background/about2.png')}`,
 
 
  
@@ -137,6 +141,11 @@ export const housekeeping=()=>[
     `${require('../assets/housekeeping/ (13).jpeg')}`,
     `${require('../assets/housekeeping/ (14).jpeg')}`,
     `${require('../assets/housekeeping/ (15).jpeg')}`,
+    `${require('../assets/housekeeping/(16).jpeg')}`,
+    `${require('../assets/housekeeping/(17).jpeg')}`,
+    `${require('../assets/housekeeping/(18).jpeg')}`,
+    `${require('../assets/housekeeping/(19).jpeg')}`,
+    `${require('../assets/housekeeping/(20).jpeg')}`,
   
  
     
@@ -153,6 +162,7 @@ export const security=()=>[
     `${require('../assets/security/(7).jpeg')}`,
     `${require('../assets/security/(8).jpeg')}`,
     `${require('../assets/security/(9).jpeg')}`,
+    `${require('../assets/security/(10).jpeg')}`,
   
  
     
@@ -174,6 +184,10 @@ export const fire=()=>[
     `${require('../assets/fire/ (12).jpeg')}`,
     `${require('../assets/fire/ (13).jpeg')}`,
     `${require('../assets/fire/ (14).jpeg')}`,
+    `${require('../assets/fire/ (15).jpeg')}`,
+    `${require('../assets/fire/ (16).jpeg')}`,
+    `${require('../assets/fire/ (17).jpeg')}`,
+    `${require('../assets/fire/ (18).jpeg')}`,
   
  
     
@@ -222,6 +236,8 @@ export const electric=()=>[
     `${require('../assets/electric/ (7).jpeg')}`,
     `${require('../assets/electric/ (8).jpeg')}`,
     `${require('../assets/electric/ (9).jpeg')}`,
+    `${require('../assets/electric/ (10).jpeg')}`,
+    `${require('../assets/electric/ (11).jpeg')}`,
   
   
  
@@ -237,5 +253,21 @@ export const cleaning=()=>[
     `${require('../assets/cleaning/ (5).jpeg')}`,
     
 ]
+
+
+export const threeD=()=>[
+
+    `${require('../assets/3Dimg/ (1).jpeg')}`,
+    `${require('../assets/3Dimg/ (2).jpeg')}`,
+    `${require('../assets/3Dimg/ (3).jpeg')}`,
+    `${require('../assets/3Dimg/ (4).jpeg')}`,
+    `${require('../assets/3Dimg/ (5).jpeg')}`,
+    // `${require('../assets/3Dimg/ (6).jpeg')}`,
+    // `${require('../assets/3Dimg/ (7).jpeg')}`,
+
+]
+
+
+
 
 

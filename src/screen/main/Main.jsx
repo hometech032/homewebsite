@@ -1,12 +1,6 @@
-import About from "../about/About";
-import Contact from "../contact/contact";
-import Header from "../header/Header";
 import Home from "../home/Home";
 import Profile from "../profile/Profile";
-import Services from "../services/Services";
-import Team from "../team/Team";
 import { NavrefcontextProvider } from "../../context/navigation/navContext";
-import Client from "../client/Client";
 import Aos from "aos";
 import { useEffect } from "react";
 //
@@ -25,6 +19,7 @@ import ElectricGallery from "../gallery/ElectricGallery";
 import HvacGallery from "../gallery/HvacGallery";
 import PestGallery from "../gallery/PestGallery";
 import Aboutmain from "../about/Aboutmain";
+import ServicesMain from "../services/Servicesmain";
 import Cleaning from "../gallery/Cleaning";
 import NotFound from "../../component/NotFound/NotFound";
 const Main = () => {
@@ -49,6 +44,8 @@ const Main = () => {
         <Route path="Cleaning" element={ <Cleaning/> } />
         <Route path="Pest" element={ <PestGallery/> } />
         <Route path="/hometech/aboutus" element={ <Aboutmain/> } />
+        <Route path="/profile" element={ <Profile/> } />
+        <Route path="/hometech/services" element={ <ServicesMain/> } />
 
 
           {/* Catch-all route for not found */}

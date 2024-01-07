@@ -1,7 +1,6 @@
 import "./Team.css";
 import { useNavRef } from "../../context/navigation/navContext";
-import { Parallax } from "react-parallax";
-import { background, food } from "../../utils/clientimg";
+import { background } from "../../utils/clientimg";
 import CardM from "../../component/card/Card";
 
 import Slider from "react-slick";
@@ -10,19 +9,14 @@ import { useEffect, useState } from "react";
 
 const Team = () => {
   const backgroundimg = background();
-  const foodimg = food();
 
   const {
-    Homesection,
-    Aboutsection,
-    Profilesection,
-    Servicessection,
+  
     Teamsection,
-    Contactsection,
   } = useNavRef();
 
-  const [slideview, setslideview] = useState(2);
-  const [slidecount, setslidecount] = useState(2);
+  const [slideview, setslideview] = useState(3);
+  const [slidecount, setslidecount] = useState(3);
   useEffect(() => {
     // Function to update slideview and slidecount based on window.innerWidth
     const updateSlideValues = () => {
@@ -30,8 +24,8 @@ const Team = () => {
         setslideview(1);
         setslidecount(1);
       } else {
-        setslideview(2);
-        setslidecount(2);
+        setslideview(3);
+        setslidecount(3);
       }
     };
 
@@ -66,14 +60,14 @@ const Team = () => {
     <div className="team-container" ref={Teamsection}>
       <div className="team-banner-container">
         <div className="team-bannerImage-container  background-img">
-          <img src={foodimg[6]} alt="" />
+          {/* <img src={foodimg[6]} alt="" /> */}
         </div>
         <div className="team-text-section frontground">
-          <h1 className="primary-heading">Teams</h1>
-          <h2 className="primary-heading-white">
+          <h4 className="primary-heading">Teams</h4>
+          <h5 className="primary-heading-white team-text-align">
             We provide an extensive range of maintenance service for
             organizations
-          </h2>
+          </h5>
           <p className="primary-text-white">
             At Home Tech Services Pvt Ltd, we take immense pride in our team of
             dedicated professionals who form the backbone of our organization.
@@ -149,10 +143,10 @@ const Team = () => {
           </div>
         </div>
         <div
-          data-aos="slide-left"
+          data-aos="zoom-in"
           className="team-image-section foreground-img"
         >
-          <img src={backgroundimg[13]} alt="" />
+          <img src={backgroundimg[30]} alt="" />
         </div>
       </div>
     </div>

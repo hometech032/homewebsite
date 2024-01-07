@@ -21,7 +21,7 @@ const AboutUs = () => {
         <div className="about-us-content-container">
           <h4 className="primary-heading ">About Us</h4>
           <p className="primary-text-white">
-            HOME Tech SERVICES PVT LTD help our clients with their manpower
+            Home tech services Pvt Ltd help our clients with their manpower
             intensive needs especially through fulfilling their blue collar
             staff vacancies. Our clients are often large establishments with
             facilities that require a lot of care and attention, we help by
@@ -34,7 +34,7 @@ const AboutUs = () => {
             onClick={handleReadmore}
             className="btn btn-primary px-4 py-2 rounded-pill"
           >
-             More About Us
+            Read More 
           </a>
         </div>
           <div className="imgfit-about-container">

@@ -6,21 +6,49 @@ import React from "react";
 import { background ,housekeeping, food } from "../../utils/clientimg";
 import Slider from "react-slick";
 
+import GalleryC from "../../component/Gallery/GalleryC";
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+
+      onClick={onClick}
+    />
+  );
+}
+
 const Housecleaning = () => {
   const backgroundimg = background();
   const housekeepingimg = housekeeping();
 
-  const [slideview, setslideview] = useState(5);
-  const [slidecount, setslidecount] = useState(5);
+  const [slideview, setslideview] = useState(3);
+  const [slidecount, setslidecount] = useState(3);
+  const [center, setCenter] = useState(false);
+
   useEffect(() => {
     // Function to update slideview and slidecount based on window.innerWidth
     const updateSlideValues = () => {
       if (window.innerWidth <= 900) {
         setslideview(1);
         setslidecount(1);
+        setCenter(true)
       } else {
         setslideview(3);
         setslidecount(3);
+        setCenter(false)
       }
     };
 
@@ -38,16 +66,17 @@ const Housecleaning = () => {
 
 
 
-
   const settings = {
     dots: true,
     infinite: true,
 
     slidesToShow: slideview,
     slidesToScroll: slidecount,
-    centerMode:true,
+    centerMode:center,
+
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
   };
-  
 
 
  
@@ -71,7 +100,7 @@ const Housecleaning = () => {
       >
       <h4 className="primary-heading">Gallery</h4>
 
-        <div style={{ width: "95%" }}>
+        <div className="gallaery-img" >
           <div>
             <Slider {...settings}>
               
@@ -79,34 +108,35 @@ const Housecleaning = () => {
               <div>
                 <img
                   style={{ width: "95%", objectFit: "cover" }}
-                  src={housekeepingimg[14]}
+                  src={housekeepingimg[9]}
                 />
               </div>
               <div>
                 <img
                   style={{ width: "95%", objectFit: "cover" }}
-                  src={housekeepingimg[5]}
+                  src={housekeepingimg[18]}
                 />
               </div>
               <div>
                 <img
                   style={{ width: "95%", objectFit: "cover" }}
-                  src={housekeepingimg[8]}
+                  src={housekeepingimg[19]}
                 />
               </div>
               <div>
                 <img
                   style={{ width: "95%", objectFit: "cover" }}
-                  src={housekeepingimg[3]}
+                  src={housekeepingimg[16]}
                 />
               </div>
               <div>
                 <img
                   style={{ width: "95%", objectFit: "cover" }}
-                  src={housekeepingimg[4]}
+                  src={housekeepingimg[17]}
                 />
               </div>
             </Slider>
+            {/* <GalleryC/> */}
           </div>
         </div>
 
@@ -131,43 +161,43 @@ const Housecleaning = () => {
               of interior spaces.
             </p>
 
-            <h2 className="primary-heading-white">Comprehensive Cleaning </h2>
+            <h5 className="primary-heading-white">Comprehensive Cleaning </h5>
             <p className="primary-heading-white">
               Housekeeping services in Facility Management cover thorough
               cleaning of interiors, maintaining a pristine and sanitized
               environment.
             </p>
 
-            <h2 className="primary-heading-white">Scheduled Maintenance </h2>
+            <h5 className="primary-heading-white">Scheduled Maintenance </h5>
             <p className="primary-heading-white">
               Regular schedules ensure consistent cleaning routines, preventing
               the accumulation of dust, dirt, and germs in various spaces.
             </p>
 
-            <h2 className="primary-heading-white">Professional Staff: </h2>
+            <h5 className="primary-heading-white">Professional Staff: </h5>
             <p className="primary-heading-white">
               Trained and skilled housekeeping professionals handle tasks
               efficiently, utilizing industry best practices and quality
               cleaning agents.
             </p>
 
-            <h2 className="primary-heading-white">
+            <h5 className="primary-heading-white">
               Surface and Material Expertise:{" "}
-            </h2>
+            </h5>
             <p className="primary-heading-white">
               Knowledgeable in handling various surfaces and materials,
               housekeeping services cater to the specific cleaning needs of
               different areas within the facility.
             </p>
 
-            <h2 className="primary-heading-white">Health and Safety: </h2>
+            <h5 className="primary-heading-white">Health and Safety: </h5>
             <p className="primary-heading-white">
               Prioritizing the health and safety of occupants, housekeeping
               services adhere to hygiene standards, reducing the risk of
               infections and promoting a healthy environment.
             </p>
 
-            <h2 className="primary-heading-white"> Waste Management </h2>
+            <h5 className="primary-heading-white"> Waste Management </h5>
             <p className="primary-heading-white">
               Housekeeping services are equipped to respond to unexpected
               situations promptly, maintaining a clean and safe environment even

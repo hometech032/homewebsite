@@ -5,21 +5,48 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { background ,cleaning, food } from "../../utils/clientimg";
 import Slider from "react-slick";
+
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+
+      onClick={onClick}
+    />
+  );
+}
 const Cleaning = () => {
   const backgroundimg = background();
   const cleaningimg = cleaning();
 
-  const [slideview, setslideview] = useState(5);
-  const [slidecount, setslidecount] = useState(5);
+  const [slideview, setslideview] = useState(3);
+  const [slidecount, setslidecount] = useState(3);
+  const [center, setCenter] = useState(false);
   useEffect(() => {
     // Function to update slideview and slidecount based on window.innerWidth
     const updateSlideValues = () => {
       if (window.innerWidth <= 900) {
         setslideview(1);
         setslidecount(1);
+        setCenter(true)
       } else {
         setslideview(3);
         setslidecount(3);
+        setCenter(false)
       }
     };
 
@@ -36,15 +63,17 @@ const Cleaning = () => {
   }, []);
 
 
-
+ 
 
   const settings = {
     dots: true,
     infinite: true,
 
     slidesToShow: slideview,
-    slidesToScroll: slidecount,
-    centerMode:true,
+    slidesToScroll: slideview,
+    centerMode:center,
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
   };
   
 
@@ -70,7 +99,7 @@ const Cleaning = () => {
       >
       <h4 className="primary-heading">Gallery</h4>
 
-        <div style={{ width: "95%" }}>
+        <div className="gallaery-img" >
           <div>
             <Slider {...settings}>
               
@@ -127,12 +156,12 @@ const Cleaning = () => {
             Quality cleaning for a spotless environment. Explore our range for effective and sustainable cleaning solutions. Facility Management involves the use of various cleaning agents tailored to different surfaces and materials, ensuring effective and safe cleaning.
             </p>
 
-            <h2 className="primary-heading-white">Specialized Equipment: </h2>
+            <h5 className="primary-heading-white">Specialized Equipment: </h5>
             <p className="primary-heading-white">
              ---
             </p>
 
-            <h2 className="primary-heading-white">Environmentally Friendly Options:</h2>
+            <h5 className="primary-heading-white">Environmentally Friendly Options:</h5>
             <p className="primary-heading-white">
               ---
             </p>
@@ -142,14 +171,14 @@ const Cleaning = () => {
             ----
             </p>
 
-            <h2 className="primary-heading-white">
+            <h5 className="primary-heading-white">
             Proactive Maintenance:
-            </h2>
+            </h5>
             <p className="primary-heading-white">
              ----
             </p>
 
-            <h2 className="primary-heading-white">Occupant Health and Safety: </h2>
+            <h5 className="primary-heading-white">Occupant Health and Safety: </h5>
             <p className="primary-heading-white">
             High-quality cleaning  adhere to industry standards, ensuring they meet safety and efficacy benchmarks for use in different facility environments.
             </p>

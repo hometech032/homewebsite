@@ -1,0 +1,24 @@
+
+.about-image-section img{
+
+    /* width: 150px; */
+    padding: 55px;
+}
+
+.gallaery-img{
+    width: 95%;
+}
+@media screen and (max-width: 900px) {
+
+    .about-image-section img{
+
+        /* width: 150px; */
+        padding: 20px;
+    }
+
+    .gallaery-img{
+        width: 85%;
+    }
+
+}
+

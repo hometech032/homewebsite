@@ -81,10 +81,10 @@ const Client = () => {
           <h5 className="text-black">
           Trusted By 100 + satisfied clients
           </h5>
-          <p className="text-black">
+          {/* <p className="text-black">
             Help our clients with their manpower intensive needs especially
             through fulfilling their blue collar staff vacancies
-          </p>
+          </p> */}
           {/* <button className="secondary-button">
            show more
           </button> */}

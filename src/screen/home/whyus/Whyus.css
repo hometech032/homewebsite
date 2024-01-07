@@ -12,11 +12,14 @@
     background-size: 2em 2em;
     background-color: #232323; */
 
+    overflow: hidden;
 
     
 background: #47ff8b;
-background: -webkit-linear-gradient(190deg, #47ff8b 0%, #004bf8 100%);
-background: linear-gradient(190deg, #47ff8b 0%, #004bf8 100%);
+/* background: -webkit-linear-gradient(190deg, #47ff8b 0%, #004bf8 100%);
+background: linear-gradient(190deg, #47ff8b 0%, #004bf8 100%); */
+background: linear-gradient(190deg, blue 0%, green 100%);
+
 
     
 
@@ -41,7 +44,6 @@ background: linear-gradient(190deg, #47ff8b 0%, #004bf8 100%);
     justify-content: center;
     gap: 25px;
     margin-top: 25px;
-    overflow: hidden;
 }
 
 .textAlingLeft{

@@ -6,21 +6,48 @@ import React from "react";
 import { background ,havc, food } from "../../utils/clientimg";
 import Slider from "react-slick";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none", background: "red" }}
+
+      onClick={onClick}
+    />
+  );
+}
+
 const HvacGallery = () => {
   const backgroundimg = background();
   const havcimg = havc();
 
   const [slideview, setslideview] = useState(5);
   const [slidecount, setslidecount] = useState(5);
+  const [center, setCenter] = useState(false);
+
   useEffect(() => {
     // Function to update slideview and slidecount based on window.innerWidth
     const updateSlideValues = () => {
       if (window.innerWidth <= 900) {
         setslideview(1);
         setslidecount(1);
+        setCenter(true)
       } else {
         setslideview(3);
         setslidecount(3);
+        setCenter(false)
       }
     };
 
@@ -38,14 +65,16 @@ const HvacGallery = () => {
 
 
 
-
   const settings = {
     dots: true,
     infinite: true,
 
     slidesToShow: slideview,
     slidesToScroll: slidecount,
-    centerMode:true,
+    centerMode:center,
+
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
   };
   
 
@@ -71,23 +100,11 @@ const HvacGallery = () => {
       >
       <h4 className="primary-heading">Gallery</h4>
 
-        <div style={{ width: "95%" }}>
+        <div className="gallaery-img">
           <div>
             <Slider {...settings}>
               
 
-              <div>
-                <img
-                  style={{ width: "95%", objectFit: "cover" }}
-                  src={havcimg[0]}
-                />
-              </div>
-              <div>
-                <img
-                  style={{ width: "95%", objectFit: "cover" }}
-                  src={havcimg[1]}
-                />
-              </div>
               <div>
                 <img
                   style={{ width: "95%", objectFit: "cover" }}
@@ -106,6 +123,13 @@ const HvacGallery = () => {
                   src={havcimg[4]}
                 />
               </div>
+              <div>
+                <img
+                  style={{ width: "95%", objectFit: "cover" }}
+                  src={havcimg[9]}
+                />
+              </div>
+              
             </Slider>
           </div>
         </div>
@@ -126,29 +150,29 @@ const HvacGallery = () => {
             <h4 className="primary-heading">HVAC</h4>
           
 
-            <h2 className="primary-heading-white">Temperature Regulation:  </h2>
+            <h5 className="primary-heading-white">Temperature Regulation:  </h5>
             <p className="primary-heading-white">
             HVAC (Heating, Ventilation, and Air Conditioning) systems play a pivotal role in maintaining optimal indoor temperatures, ensuring a comfortable and productive environment.
             </p>
 
-            <h2 className="primary-heading-white">Air Quality Management:  </h2>
+            <h5 className="primary-heading-white">Air Quality Management:  </h5>
             <p className="primary-heading-white">
             HVAC systems contribute to air quality control by filtering and circulating fresh air, minimizing pollutants, allergens, and contaminants for healthier indoor spaces.
             </p>
 
-            <h2 className="primary-heading-white">  Energy Efficiency:  </h2>
+            <h5 className="primary-heading-white">  Energy Efficiency:  </h5>
             <p className="primary-heading-white">
             Efficient HVAC systems contribute to the overall energy efficiency of a facility, reducing operational costs and environmental impact through optimized heating and cooling processes.
             </p>
 
-            <h2 className="primary-heading-white">
+            <h5 className="primary-heading-white">
             Preventive Maintenance: 
-            </h2>
+            </h5>
             <p className="primary-heading-white">
             Regular maintenance of HVAC systems within facility management ensures peak performance, minimizes downtime, and extends the lifespan of equipment, promoting reliability.
             </p>
 
-            <h2 className="primary-heading-white">Smart Technology Integration:  </h2>
+            <h5 className="primary-heading-white">Smart Technology Integration:  </h5>
             <p className="primary-heading-white">
             Modern HVAC systems incorporate smart technologies, allowing for remote monitoring, predictive maintenance, and energy optimization, enhancing overall facility management strategies.
             </p>
