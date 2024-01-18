@@ -158,7 +158,7 @@ const scrollDown = (ref) => {
                         scrollDown(Homesection) 
                        }
                        if(page==="Services"){
-                         // scrollToTop()
+                         scrollToTop()
                          
                          navigate("/hometech/services")
 
@@ -241,7 +241,7 @@ const scrollDown = (ref) => {
 
                      }
                      if(page==="Services"){
-                      //  scrollToTop()
+                       scrollToTop()
                        navigate("/hometech/services")
                       //  scrollDown(Servicessection) 
 

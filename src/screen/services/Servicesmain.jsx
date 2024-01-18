@@ -117,7 +117,10 @@ const ServicesMain = () => {
                 <Cardc img={threeDimg[1]} servicename="FIRE CREW" content="Ensure workplace safety with certified fire safety officers. "  />
                 <Cardc img={havcimg[7]} servicename="HVAC" content=" Ensuring a comfortable and productive environment."  />
                 <Cardc img={threeDimg[3]} servicename="PEST CONTROL" content=" Employing a holistic approach, IPM is a key facet of facility management"  />
-                <Cardc img={cleaningimg[1]} servicename="CLEANING MATERIALS" content="Quality cleaning for a spotless environment."  />
+                <Cardc img={threeDimg[1]} servicename="CLEANING MATERIALS" content="Quality cleaning for a spotless environment."  />
+                <Cardc img={threeDimg[0]} servicename="MARBLE POLISHING" content="Customize to meet your stone care."  />
+                <Cardc img={threeDimg[2]} servicename="MAN POWER SUPPLY" content="Quality trained housekeeper who is having background  in hospital industry ."  />
+                <Cardc img={threeDimg[1]} servicename="CARPET UPHOSLSTERY SHAMPOOING" content="Deep cleaning the carpet by injection and extraction method."  />
           </div>
 
       

@@ -21,6 +21,8 @@ import PestGallery from "../gallery/PestGallery";
 import Aboutmain from "../about/Aboutmain";
 import ServicesMain from "../services/Servicesmain";
 import Cleaning from "../gallery/Cleaning";
+import MarbleGallery from "../gallery/MarbleGallery";
+import ManPowerGallery from "../gallery/ManPowerGallery";
 import NotFound from "../../component/NotFound/NotFound";
 const Main = () => {
   useEffect(() => {
@@ -36,6 +38,9 @@ const Main = () => {
     <Routes>
 
         <Route path="/" element={ <Home/> } />
+        <Route path="/hometech/aboutus" element={ <Aboutmain/> } />
+        <Route path="/profile" element={ <Profile/> } />
+        <Route path="/hometech/services" element={ <ServicesMain/> } />
         <Route path="Housecleaninggallery" element={ <Housecleaning/> } />
         <Route path="Security" element={ <SecurityGallery/> } />
         <Route path="Electric" element={ <ElectricGallery/> } />
@@ -43,9 +48,8 @@ const Main = () => {
         <Route path="Havc" element={ <HvacGallery/> } />
         <Route path="Cleaning" element={ <Cleaning/> } />
         <Route path="Pest" element={ <PestGallery/> } />
-        <Route path="/hometech/aboutus" element={ <Aboutmain/> } />
-        <Route path="/profile" element={ <Profile/> } />
-        <Route path="/hometech/services" element={ <ServicesMain/> } />
+        <Route path="MarbleGallery" element={ <MarbleGallery/> } />
+        <Route path="ManPowerGallery" element={ <ManPowerGallery/> } />
 
 
           {/* Catch-all route for not found */}

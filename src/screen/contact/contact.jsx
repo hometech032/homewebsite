@@ -5,22 +5,17 @@ import TextField from "@mui/material/TextField";
 import {
   AccountCircle,
   EmailOutlined,
-  Message,
+ 
   PhoneAndroid,
 } from "@mui/icons-material";
 import InputAdornment from "@mui/material/InputAdornment";
 import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import ScrollToTop from "../../navigation/ScrollToTop ";
+
 import { useNavRef } from "../../context/navigation/navContext";
 
 const Contact = () => {
   const {
-    Homesection,
-    Aboutsection,
-    Profilesection,
-    Servicessection,
-    Teamsection,
+
     Contactsection,
   } = useNavRef();
 

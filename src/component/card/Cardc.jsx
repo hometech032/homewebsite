@@ -1,7 +1,6 @@
 import * as React from 'react';
 import CardMedia from '@mui/material/CardMedia';
 
-import {background,food} from '../../utils/clientimg'
 
 import { useNavigate } from 'react-router-dom';
 import "./Card.css"
@@ -44,11 +43,19 @@ const Cardc =({servicename,content,img})=>{
             navigation("/Electric")
 
         }
+        if(servicename==="MARBLE POLISHING"){
+            navigation("/MarbleGallery")
+
+        }
+        if(servicename==="MAN POWER SUPPLY"){
+            navigation("/ManPowerGallery")
+
+        }
        
         
       }
-    const backgroundimg=background();
-    const foodimg =food();
+
+   
     return (
         <>
          

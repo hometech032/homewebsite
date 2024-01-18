@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import React from "react";
 import { background ,housekeeping, food } from "../../utils/clientimg";
 import Slider from "react-slick";
-
 import GalleryC from "../../component/Gallery/GalleryC";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

@@ -1,18 +1,13 @@
 import "./About.css";
 import { useNavRef } from "../../context/navigation/navContext";
-import homepng from "../../assets/home/home2.png";
-import { Parallax } from "react-parallax";
 import { background,food } from "../../utils/clientimg";
 const About = () => {
   const backgroundimg = background();
-  const foodimg = food();
+
   const {
-    Homesection,
+
     Aboutsection,
-    Profilesection,
-    Servicessection,
-    Teamsection,
-    Contactsection,
+
   } = useNavRef();
   return (
     <div   className="about-container" ref={Aboutsection}>

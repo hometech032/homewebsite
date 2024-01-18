@@ -1,4 +1,4 @@
-import hometech from "../../assets/hometech.png";
+
 
 const ProfileC = () => {
   return (

@@ -1,7 +1,7 @@
 import "./Home.css";
 import { useNavRef } from "../../context/navigation/navContext";
 import Client from "../client/Client";
-import {  cleaning,electric,fire,havc,housekeeping,pest,security} from "../../utils/clientimg";
+import {  electric,fire,havc,housekeeping,pest,security} from "../../utils/clientimg";
 
 import Slider from "react-slick";
 
@@ -50,7 +50,7 @@ function Dotes(props) {
 const Home = () => {
 
 
-  const cleaningimg = cleaning();
+ 
   const securityimg = security();
   const electricimg = electric();
   const fireimg = fire();
@@ -61,30 +61,13 @@ const Home = () => {
 
   const {
     Homesection,
-    Aboutsection,
-    Profilesection,
-    Servicessection,
-    Teamsection,
-    Contactsection,
+  
   } = useNavRef();
   const [slideview, setslideview] = useState(3);
   const [slidecount, setslidecount] = useState(3);
 
 /////fetch service /////
 
-  const [data, setData] = useState({});
-    const newData={
-      "home":{
-          "header":"Home content",
-          "content":" We help ."
-
-      },
-
-      "about":{
-        "header":"about",
-        "content":" Wer."
-
-    }}
 
 
   // useEffect(() => {

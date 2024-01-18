@@ -46,6 +46,18 @@ const Footer = () => {
       navigation("/Electric");
       return;
     }
+    if(servicename==="MARBLE POLISHING"){
+      navigation("/MarbleGallery")
+
+  }
+  if(servicename==="MAN POWER SUPPLY"){
+      navigation("/ManPowerGallery")
+
+  }
+
+
+
+
     pages.map((page) => {
      
       if (servicename === "Home") {
@@ -109,6 +121,9 @@ const Footer = () => {
           <p className="footer-text-l" onClick={()=>hanldeNavigation("HVAC")} >HAVC</p>
           <p className="footer-text-l" onClick={()=>hanldeNavigation("CLEANING MATERIALS")} >Cleaning material</p>
           <p className="footer-text-l" onClick={()=>hanldeNavigation("FIRE CREW")} >Fire crew</p>
+          <p className="footer-text-l" onClick={()=>hanldeNavigation("MARBLE POLISHING")} >MARBLE POLISHING</p>
+          <p className="footer-text-l" onClick={()=>hanldeNavigation("MAN POWER SUPPLY")} >MAN POWER SUPPLY</p>
+          <p className="footer-text-l" onClick={()=>hanldeNavigation("MAN POWER SUPPLY")} >CARPET UPHOSLSTERY SHAMPOOING</p>
         </div>
 
         <div className="footer-gettouch">
